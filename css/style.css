@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+body {
+  background-image: url(../images/a.jpg);
+  background-size: cover;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: top left;
+
+}
+
+
+@font-face {
+font-family:  "Sprat Condensed light";
+src: url("../font/Sprat-CondensedLight.otf");
+}
+.titre{
+  position: absolute;
+  z-index: 200;
+  top: -10;
+  font-size: 19vw;
+  -webkit-text-stroke: 1px white;
+   -webkit-text-fill-color: black;
+   text-shadow: 2px 2px 20px pink;
+  font-family: "Sprat Condensed light";
+  padding: 0px;
+}
+
+.alogo{
+
+}
+
+.alert {
+ padding: 20px;
+ position: bottom;
+ font-family: "Sprat Condensed light";
+ font-size: 10vw;
+ position: relative;
+ z-index: 201;
+ color: white;
+ -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: white;
+  text-shadow: 2px 2px 20px pink;
+ margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+ margin-left: 15px;
+ color: white;
+ font-family: "Sprat Condensed light";
+ font-size: 10vw;
+ float: right;
+ cursor: pointer;
+ transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+ color: black;
+}
+
+
+.logo{
+width: 20%;
+margin-left: 40%;
+margin-right: 40%;
+bottom: 3vw;
+z-index: 100;
+position:fixed;
+align-content: center;
+
+}
+
+.VIDEOCD{
+  position: relative;
+  z-index: 1;
+}
+.logoshape {
+  float: center;
+  position: fixed;
+  shape-outside: circle(50%);
+  width: 500px;
+  position: fixed;
+  bottom: 3vw;
+  height: 20vw;
+}
+
+.soustitre{
+  font-size: 40px;
+  padding: 10px;
+  font-family:"Sprat Condensed Light"
+}
+
+p{
+  margin-bottom: 10px;
+  display: inline-block;
+  font-family:"Sprat Condensed Light";
+  width: 50%;
+  height: 90%;
+}
+
+
+
+.vide{
+  height: 0;
+  position: relative;
+  top: 0;
+}
+
+.vide2{
+  height: 0;
+  position: relative;
+  top: 0;
+}
+
+.texteintro{
+  position: relative;
+  font-size: 20px;
+  padding: 10px;
+  background-color: white;
+  font-family: "Sprat Condensed Light";
+
+}
+
+.textarea{
+  width: 100%;
+  font-family: "Sprat Condensed Light";
+  align-content: center;
+  font-size: 10vw;
+  position: fixed;
+  z-index: 20;
+  bottom: 0;
+  color:white;
+  -webkit-text-stroke: 1px white;
+   -webkit-text-fill-color: white;
+   text-shadow: 2px 2px 20px pink;
+  background-color: black;
+  border-style: hidden;
+}
+
+.behave {
+  visibility: visible;
+  font-size: 20px;
+  color: black;
+  padding-left: 10px;
+  font-family: "Sprat Condensed Light";
+}
+
+.vide2{
+  position: relative;
+  height: 10px;
+  background-color: linear-gradient( yellow, black);
+}
+.shown {
+color: white;
+-webkit-text-stroke: 1px white;
+text-shadow: 2px 2px 20px pink;
+}
+
+
+.tracklist{
+  padding-left: 10px;
+}
+
+@media screen and (max-width:1000px){
+  p{
+    display: inline-block;
+    width: 100%;
+  }
+  .logo{
+    width: 30%;
+  }
+
+  /* The alert message box */
