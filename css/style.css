@@ -15,45 +15,72 @@ body {
 }
 
 
-@font-face {
-font-family:  "Sprat Condensed light";
-src: url("../font/Sprat-CondensedLight.otf");
-}
 .titre{
-  position: absolute;
+  position: fixed;
   z-index: 200;
+  left: 9vw;
   top: -10;
-  font-size: 19vw;
-  -webkit-text-stroke: 1px white;
-   -webkit-text-fill-color: black;
-   text-shadow: 2px 2px 20px pink;
-  font-family: "Sprat Condensed light";
-  padding: 0px;
+  font-size: 5vw;
+  -webkit-text-stroke: 1px #FF4500;
+   -webkit-text-fill-color: white;
+   text-shadow: 0px 0px 20px #FF4500;
+  font-family: "Helvetica";
+  font-style: Thin;
+  padding-left: 11.5vw;
+  -webkit-transform:scale(3.5,1); /* Safari and Chrome */
+    -moz-transform:scale(3.5,1); /* Firefox */
+    -ms-transform:scale(3.5,1); /* IE 9 */
+    -o-transform:scale(3.5,1); /* Opera */
+    transform:scale(3.5,1);
 }
 
 .alogo{
+  position: fixed;
+  z-index: 202;
+  top: 0;
 
 }
 
 .alert {
- padding: 20px;
- position: bottom;
- font-family: "Sprat Condensed light";
- font-size: 10vw;
- position: relative;
- z-index: 201;
+ padding: 10px;
+
+ font-family: "Helvetica";
+ font-style: Thin;
+ font-size: 2vw;
+ padding-left: 20px;
+ position: fixed;
+ left: 25vw;
+ bottom: 0;
+ z-index: 106;
  color: white;
- -webkit-text-stroke: 1px white;
+ background: linear-gradient(   transparent 10%, #FF4500);
+ -webkit-text-stroke: 1px #FF4500;
   -webkit-text-fill-color: white;
-  text-shadow: 2px 2px 20px pink;
- margin-bottom: 15px;
+  text-shadow: 0px 0px 10px #FF4500;
+ margin-bottom: 0;
+ -webkit-transform:scale(2,1); /* Safari and Chrome */
+   -moz-transform:scale(2,1); /* Firefox */
+   -ms-transform:scale(2,1); /* IE 9 */
+   -o-transform:scale(2,1); /* Opera */
+   transform:scale(2,1);
 }
 
+
+.vide1{
+  position: relative;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 200vh;
+  background: linear-gradient( #FF4500,  transparent 90%);
+}
 /* The close button */
 .closebtn {
+  padding-right: 5vw;
  margin-left: 15px;
  color: white;
- font-family: "Sprat Condensed light";
+ font-family: "Helvetica";
+ font-style: Thin;
  font-size: 10vw;
  float: right;
  cursor: pointer;
@@ -66,42 +93,87 @@ src: url("../font/Sprat-CondensedLight.otf");
 }
 
 
+
+.CIRCLE{
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    position:  relative;
+    top: 0;
+    z-index: 4;
+    border-radius: 50%;
+    background-image: radial-gradient(black  ,#FF4500 )
+}
+.fullblockc{
+  height: 100vh;
+  width:100vw;
+  top: 0;
+  position:absolute;
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  animation-duration: 2s;
+ }
+.fullblock{
+  height: 100vh;
+  width:100vw;
+  top: 0;
+  position:fixed;
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  animation-duration: 2s;
+ }
+
+
 .logo{
-width: 20%;
-margin-left: 40%;
-margin-right: 40%;
-bottom: 3vw;
-z-index: 100;
+width: 20vw;
+margin-left: 40vw;
+margin-right: 40vw;
+margin-top: 35vh;
+z-index: 200;
 position:fixed;
-align-content: center;
+align-items: center;
+justify-content: center;
+  animation-duration: 2s;
+
 
 }
 
 .VIDEOCD{
   position: relative;
+  width: 100%;
   z-index: 1;
 }
-.logoshape {
-  float: center;
-  position: fixed;
-  shape-outside: circle(50%);
-  width: 500px;
-  position: fixed;
-  bottom: 3vw;
-  height: 20vw;
-}
+
+
 
 .soustitre{
-  font-size: 40px;
+  font-size: 10vw;
   padding: 10px;
-  font-family:"Sprat Condensed Light"
+  color: white;
+  position: relative;
+  z-index: 120;
+  -webkit-text-stroke: 1px #FF4500;
+   -webkit-text-fill-color: white;
+   text-shadow: 0px 0px 10px #FF4500;
+   font-family: "Helvetica";
+   font-style: Thin;
+   -webkit-transform:scale(1,0.5); /* Safari and Chrome */
+     -moz-transform:scale(1,0.5); /* Firefox */
+     -ms-transform:scale(1,0.5); /* IE 9 */
+     -o-transform:scale(1,0.5); /* Opera */
+     transform:scale(1,0.5);
+     text-align: center;
 }
 
 p{
   margin-bottom: 10px;
-  display: inline-block;
-  font-family:"Sprat Condensed Light";
-  width: 50%;
+  font-family: "Helvetica";
+  font-style: Thin;
+  font-size: 20px;
+
+  width: 50vw;
   height: 90%;
 }
 
@@ -121,60 +193,77 @@ p{
 
 .texteintro{
   position: relative;
-  font-size: 20px;
-  padding: 10px;
-  background-color: white;
-  font-family: "Sprat Condensed Light";
-
-}
-
-.textarea{
-  width: 100%;
-  font-family: "Sprat Condensed Light";
-  align-content: center;
-  font-size: 10vw;
-  position: fixed;
-  z-index: 20;
-  bottom: 0;
-  color:white;
-  -webkit-text-stroke: 1px white;
+  z-index: 30;
+  padding: 2vw;
+  padding-right: 4vw;
+  -webkit-text-stroke: 0.5px #FF4500;
    -webkit-text-fill-color: white;
-   text-shadow: 2px 2px 20px pink;
-  background-color: black;
-  border-style: hidden;
+  text-shadow: 0px 0px 10px #FF4500;
+
 }
+
+
 
 .behave {
   visibility: visible;
-  font-size: 20px;
-  color: black;
-  padding-left: 10px;
-  font-family: "Sprat Condensed Light";
+  font-size: 30px;
+  -webkit-text-stroke: 0.5px white;
+   -webkit-text-fill-color: white;
+  text-shadow: 0px 0px 10px #FF4500;
+  font-family: "Helvetica";
+  font-style: Thin;
 }
 
-.vide2{
-  position: relative;
-  height: 10px;
-  background-color: linear-gradient( yellow, black);
-}
+
 .shown {
 color: white;
--webkit-text-stroke: 1px white;
-text-shadow: 2px 2px 20px pink;
+-webkit-text-stroke: 0.5px #FF4500;
+ -webkit-text-fill-color: white;
+text-shadow: 0px 0px 100px #FF4500;
+position: relative;
+z-index: 100;
 }
 
 
 .tracklist{
+  color: white;
   padding-left: 10px;
+  -webkit-text-stroke: 0.5px white;
+  text-shadow: 0px 0px 2px #FF4500;
+  animation-duration: 3s;
+  position: relative;
+
+}
+
+.tab{
+
+  margin-left: 100px;
+}
+lastvid {
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
 }
 
 @media screen and (max-width:1000px){
   p{
     display: inline-block;
     width: 100%;
+    font-size: 13px;
   }
   .logo{
-    width: 30%;
+    width: 20%;
+    position: absolute;
+    margin-top: 45vh;
+    margin-left: 40%;
+    margin-right: 40%;
   }
+
+  .titre{
+    padding-left: 12vw;
+  }
+
+  }
+
 
   /* The alert message box */

@@ -1,7 +1,7 @@
 let osc, fft;
 
 function setup() {
-  createCanvas(1800, 256);
+  createCanvas(1800, 600);
 
   osc = new p5.TriOsc(); // set frequency and type
   osc.amp(0.5);
@@ -11,11 +11,11 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  background(0);
 
   let waveform = fft.waveform(); // analyze the waveform
   beginShape();
-  strokeWeight(2);
+  strokeWeight(0);
   for (let i = 0; i < waveform.length; i++) {
     let x = map(i, 0, waveform.length, 0, width);
     let y = map(waveform[i], -1, 1, height, 0);
