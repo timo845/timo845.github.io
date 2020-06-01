@@ -4,7 +4,7 @@ function setup() {
   createCanvas(1800, 600);
 
   osc = new p5.TriOsc(); // set frequency and type
-  osc.amp(0.4);
+  osc.amp(0.5);
 
   fft = new p5.FFT();
   osc.start();
