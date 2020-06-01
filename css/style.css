@@ -248,7 +248,7 @@ justify-content: center;
   font-size: 10vw;
   padding: 10px;
     color: white;
-    padding-top: 60vh;
+    padding-top: 0vh;
   position: relative;
   z-index: 201;
   -webkit-text-stroke: 1px #FF4500;
