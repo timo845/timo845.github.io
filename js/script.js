@@ -4,7 +4,7 @@ function setup() {
   createCanvas(1800, 600);
 
   osc = new p5.TriOsc(); // set frequency and type
-  osc.amp(0.5);
+  osc.amp(0.4);
 
   fft = new p5.FFT();
   osc.start();
@@ -27,7 +27,7 @@ function draw() {
   let freq = map(mouseX, 0, width, 20, 200);
   osc.freq(freq);
 
-  let amp = map(mouseY, 0, height, 0.5, 0.9);
+  let amp = map(mouseY, 0, height, 0.1, 0.9);
   osc.amp(amp);
 }
 
